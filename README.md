@@ -73,7 +73,7 @@ We'd like to extend our gratitude to all the contributors and supporters who mad
 
 ## Contact
 
-For any inquiries or questions, feel free to reach out to us at contact@example.com.
+For any inquiries or questions, feel free to reach out to us at waqarnizamuddin@gmail.com.
 
 Happy shopping! 🛒
 
