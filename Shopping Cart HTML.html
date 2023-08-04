@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>
+            
+            Shopping Cart
+        
+        </title>
+
+		<link rel ="stylesheet" type="text/css" href="Shopping Cart CSS.css">
+
+		<script src="https://kit.fontawesome.com/9088cc6401.js" crossorigin="anonymous"></script>
+
+	</head>
+
+    <body style="background:#c8efd1">
+
+        <div class="container">
+
+            <h1>
+                
+                Shopping Cart
+            
+            </h1>
+
+            <div class="cart">
+
+                <div class="products">
+
+                    <div class="product">
+
+                        <img src="https://5.imimg.com/data5/LX/YA/MY-15290502/red-apple-500x500.jpg "style=";height:195px;">
+                        <div class="product-info">
+
+                            <h3 class="product-name">
+                                
+                                Apple
+                            
+                            </h3>
+
+                            <h4 class="product-price">
+                                
+                                Rs. 100
+                            
+                            </h4>
+
+                            <h4 class="product-offer">
+                                
+                                30%
+                            
+                            </h4>
+
+                            <p class="product-quantity">
+                                
+                                Qnt: <div class="counter">
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1"  size="1">
+                                    <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                                  </div>
+                                  <script type="text/javascript">
+                                    function increaseCount(a, b) {
+                                      var input = b.previousElementSibling;
+                                      var value = parseInt(input.value, 10); 
+                                      value = isNaN(value)? 0 : value;
+                                      value ++;
+                                      input.value = value;
+                                    }
+                                    function decreaseCount(a, b) {
+                                      var input = b.nextElementSibling;
+                                      var value = parseInt(input.value, 10); 
+                                      if (value > 1) {
+                                        value = isNaN(value)? 0 : value;
+                                        value --;
+                                        input.value = value;
+                                      }
+                                    }
+                                  </script>
+                            
+                            </p>
+                            
+
+                            <p class="product-remove">
+
+                                <i class="fas fa-trash-alt"></i>
+
+                                <span class="remove">
+                                    
+                                    Remove
+                                
+                                </span>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product">
+
+                        <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt9prodlp/products/p-delicious-gourmet-snacks-gift-box-146075-m.jpg">
+
+                        <div class="product-info">
+
+                            <h3 class="product-name">
+                                
+                                Dry Fruits
+                            
+                            </h3>
+
+                            <h4 class="product-price">
+                                
+                                Rs. 800
+                            
+                            </h4>
+
+                            <h4 class="product-offer">
+                                
+                                20%
+                            
+                            </h4>
+
+                            <p class="product-quantity">
+                                Qnt: <div class="counter">
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1"  size="1">
+                                    <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                                  </div>
+                                  <script type="text/javascript">
+                                    function increaseCount(a, b) {
+                                      var input = b.previousElementSibling;
+                                      var value = parseInt(input.value, 10); 
+                                      value = isNaN(value)? 0 : value;
+                                      value ++;
+                                      input.value = value;
+                                    }
+                                    function decreaseCount(a, b) {
+                                      var input = b.nextElementSibling;
+                                      var value = parseInt(input.value, 10); 
+                                      if (value > 1) {
+                                        value = isNaN(value)? 0 : value;
+                                        value --;
+                                        input.value = value;
+                                      }
+                                    }
+                                  </script>
+                            
+                            </p>
+                            <p class="product-remove">
+
+                                <i class="fas fa-trash-alt"></i>
+
+                                <span class="remove">
+                                    
+                                    Remove
+                                
+                                </span>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="cart-total">
+
+                    <p>
+
+                        <span>
+                            
+                            Total Price
+                        
+                        </span>
+
+                        <span>
+                            
+                            Rs. 900
+                        
+                        </span>
+
+                    </p>
+                    <p>
+
+                        <span>
+                            
+                            No. of Items
+                        
+                        </span>
+
+                        <span>
+                            
+                            2
+                        
+                        </span>
+
+                    </p>
+
+                    <p>
+
+                        <span>
+                            
+                            You Save
+                        
+                        </span>
+
+                        <span>
+                            
+                            Rs. 220
+                        
+                        </span>
+
+                    </p>
+
+                    <a href="Details For Checkout HTML.html">
+                        
+                        Proceed to Checkout
+                    
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>
